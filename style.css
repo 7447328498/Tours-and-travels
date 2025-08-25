@@ -191,3 +191,20 @@ body {
     grid-template-columns: 1fr;
   }
 }
+/* hover effect on menu */
+/* Style dropdown links (Andaman, Maharashtra, etc.) */
+.sub-dropdown-content a {
+  display: block;
+  padding: 10px 15px;
+  color: #3e3774;
+  text-decoration: none;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+/* Hover effect */
+.sub-dropdown-content a:hover {
+  background: #6159a5;  /* light purple background */
+  color: white;          /* text turns white */
+  border-radius: 4px;
+}
+
