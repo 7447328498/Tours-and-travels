@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f9f9f9;
+    }
+    header {
+      background: #004466;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+    .contact-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      padding: 20px;
+      max-width: 1100px;
+      margin: 20px auto;
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    }
+    .contact-details, .contact-form {
+      flex: 1;
+      min-width: 300px;
+      margin: 10px;
+      padding: 20px;
+    }
+    .contact-details h2, .contact-form h2 {
+      margin-bottom: 10px;
+      color: #004466;
+    }
+    .contact-details p {
+      margin: 8px 0;
+    }
+    .contact-form input, .contact-form textarea {
+      width: 100%;
+      padding: 10px;
+      margin: 8px 0;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    .contact-form button {
+      background: #004466;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    .contact-form button:hover {
+      background: #006699;
+    }
+    .map-container {
+      text-align: center;
+      margin: 20px auto;
+      max-width: 1100px;
+      border-radius: 8px;
+      overflow: hidden;
+    }
+    iframe {
+      width: 100%;
+      height: 300px;
+      border: none;
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <h1>Contact Us</h1>
+  </header>
+
+  <!-- Contact Content -->
+  <section class="contact-container">
+    <!-- Contact Info -->
+    <div class="contact-details">
+      <h2>Get in Touch</h2>
+      <p><strong>Address:</strong> 123 Travel Street, Mumbai, India</p>
+      <p><strong>Phone:</strong> +91 98765 43210</p>
+      <p><strong>Email:</strong> info@yourtravelagency.com</p>
+      <p><strong>Working Hours:</strong> Mon - Sat, 9:00 AM - 7:00 PM</p>
+    </div>
+
+    <!-- Contact Form -->
+    <div class="contact-form">
+      <h2>Send Us a Message</h2>
+      <form action="#" method="post">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Google Map -->
+  <section class="map-container">
+    <iframe 
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3770.780705319865!2d72.87765541537762!3d19.07609038708767!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c630214e4d4f%3A0x50a9a9a663b3a3c1!2sMumbai%2C%20Maharashtra%2C%20India!5e0!3m2!1sen!2sin!4v1692240818336!5m2!1sen!2sin" 
+      allowfullscreen="" loading="lazy">
+    </iframe>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-section about">
+        <h3>About Us</h3>
+        <p>My Adventure Pvt Ltd creates memorable travel experiences across India & abroad.</p>
+      </div>
+      <div class="footer-section contact">
+        <h3>Contact</h3>
+        <p>Mumbai, Maharashtra, 411014</p>
+        <p>123456667 | 97238498543</p>
+        <p>✉ myadventure@gmail.com</p>
+      </div>
+      <div class="footer-section follow">
+        <h3>Follow Us</h3>
+        <div class="social-icons">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-linkedin"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 Tours and Travels | All Rights Reserved</p>
+    </div>
+  </footer>
+</body>
+</html>
