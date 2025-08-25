@@ -3,105 +3,178 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Goa Heritage Tour</title>
+  <title>Tours & Travels</title>
   <link rel="stylesheet" href="style.css" />
-  <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-  />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
 </head>
 <body>
 
-
-  <div class="navbar">
-    <img src="logo t.jpeg" alt="Logo" class="logo" />
-    <div class="nav-links">
-
-      
-      <div class="dropdown">
-        <a href="#">Group Tours</a>
-        <div class="dropdown-content">
-          <a href="#">Domestic Tours</a>
-          <a href="#">International Tours</a>
-          <a href="#">Weekend Trips</a>
-        </div>
-      </div>
-
-      
-      <div class="dropdown">
-        <a href="#">Customised Tours</a>
-        <div class="dropdown-content">
-          <a href="#">Family Packages</a>
-          <a href="#">Corporate Trips</a>
-          <a href="#">Adventure Tours</a>
-        </div>
-      </div>
-
-      
-      <a href="#">Air Ticket & Hotel Booking</a>
-      <a href="#">Contact</a>
-    </div>
-
-    <div class="search-box">
-      <input type="text" placeholder="Search..." />
-    </div>
+  <div class="page-wrapper">
 
    
-    <div class="menu-toggle" id="menu-toggle">
-      <i class="fas fa-bars"></i>
-    </div>
-  </div>
+    <header class="navbar">
+      <img src="logo t.jpeg" alt="Logo" class="logo" />
+      <nav class="nav-links">
+        <div class="dropdown">
+          <a href="#">Group Tours</a>
+          <div class="dropdown-content">
+            <div class="sub-dropdown">
+              <a href="Domestic.html">Domestic Tours ▸</a>
+              <div class="sub-dropdown-content">
+                
+                <a href="#delhi">Delhi Heritage Tour</a>
+                <a href="#mumbai">Mumbai City Tour</a>
+                <a href="#rajasthan">Rajasthan Desert Tour</a>
+              </div>
+            </div>
+            <a href="#">International Tours</a>
+            <a href="#">Weekend Trips</a>
+          </div>
+        </div>
 
+        <div class="dropdown">
+          <a href="#">Customised Tours</a>
+          <div class="dropdown-content">
+            <a href="#">Family Packages</a>
+            <a href="#">Corporate Trips</a>
+            <a href="#">Adventure Tours</a>
+          </div>
+        </div>
 
-  <div class="center-box">
-    <div class="tour-box">
-      <h1>Goa Heritage Tour</h1>
-      <p>
-        4D/5N Candolim Beach, Vagator, Arambol, 4* Resort Stay<br />
-        Package starting from Rs. 3000 only
-      </p>
-    </div>
-  </div>
+         <div class="dropdown">
+          <a href="airticket-hotel.html">Air Ticket&Hotel Booking</a>
+          <div class="dropdown-content">
+            <a href="#">Family Packages</a>
+            
+          </div>
 
- 
-  <footer class="footer">
-    <div class="footer-container">
-   
-      <div class="footer-section about">
-        <h3>About Us</h3>
-        <p>
-          My Adventure Pvt Ltd specializes in creating memorable travel experiences.
-          With years of industry expertise, join us to explore the world with ease and style!
-        </p>
+          <div class="dropdown">
+          <a href="contact.html">Contact</a>
+          <div class="dropdown-content">
+            <a href="#">Contact us</a>
+            
+          </div>
+         
+      
+       
+      </nav>
+    </header>
+
+    
+    <main class="main-content">
+      <div class="center-box">
+
+        <!-- Goa -->
+        <section class="slider-container" id="goa">
+          <input type="radio" name="goa" id="goa-slide1" checked>
+          <input type="radio" name="goa" id="goa-slide2">
+          <div class="slides">
+            <div class="tour-slide" style="background-image:url('Tour1.jpeg')">
+              <h1>Goa Heritage Tour</h1>
+              <p>4D/5N Candolim Beach, Vagator, Arambol <br> From Rs. 3000</p>
+            </div>
+            <div class="tour-slide" style="background-image:url('tour2.jpeg')">
+              <h1>Goa Beachside Fun</h1>
+              <p>Stay at 4* Resort <br> From Rs. 3500</p>
+            </div>
+          </div>
+          <div class="manual-nav">
+            <label for="goa-slide1"></label>
+            <label for="goa-slide2"></label>
+          </div>
+        </section>
+
+       
+        <section class="slider-container" id="delhi">
+          <input type="radio" name="delhi" id="delhi-slide1" checked>
+          <input type="radio" name="delhi" id="delhi-slide2">
+          <div class="slides">
+            <div class="tour-slide" style="background-image:url('tour3.jpeg')">
+              <h1>Delhi Heritage Tour</h1>
+              <p>3D/4N Red Fort, Qutub Minar <br> From Rs. 4000</p>
+            </div>
+            <div class="tour-slide" style="background-image:url('tour4.jpeg')">
+              <h1>Delhi City Tour</h1>
+              <p>India Gate & Lotus Temple <br> From Rs. 4200</p>
+            </div>
+          </div>
+          <div class="manual-nav">
+            <label for="delhi-slide1"></label>
+            <label for="delhi-slide2"></label>
+          </div>
+        </section>
+
+       
+        <section class="slider-container" id="mumbai">
+          <input type="radio" name="mumbai" id="mumbai-slide1" checked>
+          <input type="radio" name="mumbai" id="mumbai-slide2">
+          <div class="slides">
+            <div class="tour-slide" style="background-image:url('tour5.avif')">
+              <h1>Mumbai City Tour</h1>
+              <p>3D/4N Gateway of India, Marine Drive <br> From Rs. 4500</p>
+            </div>
+            <div class="tour-slide" style="background-image:url('tour6.avif')">
+              <h1>Mumbai Highlights</h1>
+              <p>Elephanta Caves, Juhu Beach <br> From Rs. 4800</p>
+            </div>
+          </div>
+          <div class="manual-nav">
+            <label for="mumbai-slide1"></label>
+            <label for="mumbai-slide2"></label>
+          </div>
+        </section>
+
+       
+        <section class="slider-container" id="rajasthan">
+          <input type="radio" name="rajasthan" id="raj-slide1" checked>
+          <input type="radio" name="rajasthan" id="raj-slide2">
+          <div class="slides">
+            <div class="tour-slide" style="background-image:url('tour7.avif')">
+              <h1>Rajasthan Desert Tour</h1>
+              <p>4D/5N Jaisalmer Fort, Sand Dunes <br> From Rs. 5000</p>
+            </div>
+            <div class="tour-slide" style="background-image:url('tour8.avif')">
+              <h1>Royal Rajasthan</h1>
+              <p>Jaipur & Udaipur Palaces <br> From Rs. 5500</p>
+            </div>
+          </div>
+          <div class="manual-nav">
+            <label for="raj-slide1"></label>
+            <label for="raj-slide2"></label>
+          </div>
+        </section>
+
       </div>
+    </main>
 
-     
-      <div class="footer-section contact">
-        <h3>Contact Us</h3>
-        <p> Andheri City, Mumbai, Maharashtra, 411014</p>
-        <p> 123456667 | 97238498543</p>
-        <p>✉ myadventure@gmail.com</p>
-      </div>
 
-      <!-- Follow Us -->
-      <div class="footer-section follow">
-        <h3>Follow Us</h3>
-        <div class="social-icons">
-          <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
-          <a href="#" class="social"><i class="fab fa-instagram"></i></a>
-          <a href="#" class="social"><i class="fab fa-twitter"></i></a>
-          <a href="#" class="social"><i class="fab fa-linkedin"></i></a>
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-section about">
+          <h3>About Us</h3>
+          <p>My Adventure Pvt Ltd creates memorable travel experiences across India & abroad.</p>
+        </div>
+        <div class="footer-section contact">
+          <h3>Contact</h3>
+          <p>Mumbai, Maharashtra, 411014</p>
+          <p> 123456667 | 97238498543</p>
+          <p>✉ myadventure@gmail.com</p>
+        </div>
+        <div class="footer-section follow">
+          <h3>Follow Us</h3>
+          <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+          </div>
         </div>
       </div>
-    </div>
+      <div class="footer-bottom">
+        <p>© 2025 Tours and Travels | All Rights Reserved</p>
+      </div>
+    </footer>
 
-    <div class="footer-bottom">
-      <p>© 2025 Tours and Travels | All Rights Reserved</p>
-      <p>Powered by <strong>Cybromatech Technology Pvt Ltd</strong></p>
-    </div>
-  </footer>
-  
-
-  <script src="script.js"></script>
+  </div>
 </body>
 </html>
